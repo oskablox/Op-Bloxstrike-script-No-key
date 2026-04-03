@@ -20,7 +20,10 @@ Button.Position = UDim2.new(0.1, 0, 0.6, 0)
 Button.Text = "Sprawdź klucz"
 
 Button.MouseButton1Click:Connect(function()
-    if TextBox.Text == correctKey then
+    if TextBox.Text:gsub("%s+", "") == correctKey then
+        Button.Text = "OK!"
+
+        wait(0.5)
         ScreenGui:Destroy()
 
         loadstring(game:HttpGet("https://raw.githubusercontent.com/oskablox/Op-Bloxstrike-script-No-key/main/main.lua"))()
