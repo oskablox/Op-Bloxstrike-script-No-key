@@ -1,4 +1,4 @@
-main.lua--[[ 
+--[[ 
     Oskachaets V22 | Safety First
     Fixes: Anti-Cheat Kicks, Bypassed Head Expander, Screen-Sync Finalized
 ]]
